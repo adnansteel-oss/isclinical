@@ -1,0 +1,647 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Guide | Professional Skincare Solutions</title>
+    
+    <!-- Favicon: Using your logo.svg -->
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!-- Custom Styles -->
+    <style>
+        .group:hover .dropdown-menu { display: block; }
+        
+        @keyframes fadeEffect {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        .animate-fade {
+            animation: fadeEffect 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+<!-- Header / Navbar -->
+<nav class="bg-white shadow-md py-2 sticky top-0 z-50">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        
+        <!-- Logo and Brand Name Area -->
+        <div class="flex items-center gap-3">
+            <a href="/">
+                <img src="logo.svg" alt="Clinical Guide Logo" class="h-20 w-auto">
+            </a>
+            <div class="text-2xl font-bold text-blue-700 hidden sm:block">
+                <a href="/">CLINICAL<span class="text-gray-600">GUIDE</span></a>
+            </div>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <div class="space-x-6 hidden md:flex font-medium text-gray-600 items-center">
+            <a href="#bestsellers" class="hover:text-blue-700">Best Sellers</a>
+            
+            <!-- Shop by Concern Dropdown -->
+            <div class="relative group">
+                <button class="hover:text-blue-700 flex items-center">Shop by Concern ▾</button>
+                <div class="absolute hidden dropdown-menu bg-white shadow-lg py-2 w-56 border border-gray-100 right-0">
+                    <a href="#anti-aging" class="block px-4 py-2 hover:bg-blue-50">Anti-Aging</a>
+                    <a href="#congestion" class="block px-4 py-2 hover:bg-blue-50">Congestion & Imperfections</a>
+                    <a href="#dryness" class="block px-4 py-2 hover:bg-blue-50">Dryness & Hydration</a>
+                    <a href="#eye-lip-neck" class="block px-4 py-2 hover:bg-blue-50">Eyes, Lips + Neck</a>
+                </div>
+            </div>
+            
+            <a href="#collections" class="hover:text-blue-700">Collections</a>
+            <a href="/blogs/" class="hover:text-blue-700">Blog</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<header class="bg-blue-900 text-white py-16">
+<div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">The Ultimate Guide to iS Clinical Professional Skincare Solutions</h1>
+<p class="text-blue-100 text-lg mb-8">Discover professional-grade products trusted by experts. Curated for your wellness and peace of mind.</p>
+<a href="https://amzn.to/4dava3A" target="_blank" class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold text-lg hover:bg-blue-50 transition shadow-lg inline-block">Shop Amazon</a>
+</div>
+<div class="md:w-1/2">
+<img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/2cb412b9-83cd-4f57-846c-151fc20291b3._CR0%2C0%2C3000%2C622_SX1500_.png" class="rounded-lg shadow-2xl w-full">
+</div>
+</div>
+</header>
+
+
+<!-- Divider Banner -->
+<section class="container mx-auto px-6 py-12">
+<a href="https://amzn.to/4nCwAHO" target="_blank" class="block">
+<img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/12bd1bc6-a9c0-4639-8aa1-35b945d245cc.__CR0,0,2928,1200_PT0_SX1464_V1___.jpg" class="w-full rounded-lg shadow-lg hover:opacity-90 transition">
+</a>
+</section>
+
+
+<!-- Best Sellers Section -->
+<section id="bestsellers" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-serif mb-16 text-center text-slate-900">Expert-Curated Clinical-Grade Skincare</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<script>
+const products =[
+{name: "Cleansing Complex", img: "https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg", link: "https://amzn.to/4nty9Yl", bullet: "• Purifies pores. • Balances skin. • Smooths texture.", desc: "This high-performance cleanser purifies deeply while maintaining your skin's natural moisture balance. The <strong>iS Clinical</strong> Cleansing Complex utilizes botanical extracts to clear impurities, serving as an essential foundation for any daily skincare routine."},
+{name: "Pro-Heal Serum Advance+", img: "https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg", link: "https://amzn.to/4930qz1", bullet: "• Calms redness. • Antioxidant repair. • Soothes sensitivity.", desc: "Designed for compromised complexions, this antioxidant-rich treatment combines Vitamin C with olive leaf extract. It provides superior protection against environmental stressors while actively reducing inflammation."},
+{name: "Active Serum", img: "https://m.media-amazon.com/images/I/61oT64Q+KUL._SL1500_.jpg", link: "https://amzn.to/4nrxwym", bullet: "• Evens skin tone. • Anti-aging. • Radiant glow.", desc: "A corrective formula built for results. It helps clear blemishes and soften skin texture, offering a potent anti-aging experience. Consistent use leads to a visibly brighter, more youthful complexion."},
+{name: "Active Peel System", img: "https://m.media-amazon.com/images/I/61WWrCkkRhL._SL1500_.jpg", link: "https://amzn.to/4wwugWy", bullet: "• Resurfacing. • Hydrating. • Rejuvenating.", desc: "This two-step at-home treatment provides clinical-grade resurfacing. It gently exfoliates and hydrates without drying, ensuring that your skin receives a professional polish and improved texture."},
+{name: "Reparative Moisture Emulsion", img: "https://m.media-amazon.com/images/I/51Shz7BpI9L._SL1500_.jpg", link: "https://amzn.to/4nA9di8", bullet: "• Intense hydration. • Smooths fine lines. • Protective barrier.", desc: "This intensive <strong>iS Clinical</strong> moisturizer offers deep, surface-level hydration. It smooths the appearance of fine lines and reinforces the skin's protective barrier."},
+{name: "Super Serum Advance+", img: "https://m.media-amazon.com/images/I/61P6oMxVFiL._SL1500_.jpg", link: "https://amzn.to/3RdD17W", bullet: "• Collagen boost. • Brightening. • Reduces scarring.", desc: "This advanced <strong>iS Clinical</strong> formulation combines Vitamin C with copper peptides to deliver targeted anti-aging benefits. It excels at brightening uneven skin tone and promoting skin recovery."},
+{name: "Hydra-Cool Serum", img: "https://m.media-amazon.com/images/I/614cAHMAIQL._SL1500_.jpg", link: "https://amzn.to/4dlFp3N", bullet: "• Cooling. • Refreshing. • Anti-blemish.", desc: "Formulated to rejuvenate and soothe, this cooling <strong>iS Clinical</strong> serum delivers intense hydration. It is perfect for calming blemish-prone or sun-exposed skin."},
+{name: "Moisturizing Complex", img: "https://m.media-amazon.com/images/I/51oIJ2EtRkL._SL1500_.jpg", link: "https://amzn.to/4dkvqgF", bullet: "• Vitamin A. • Environmental shield. • Retains moisture.", desc: "This sophisticated <strong>iS Clinical</strong> moisturizer provides vital protection against environmental damage. Its nutrient-rich formula helps the skin retain essential moisture."},
+{name: "Youth Intensive Crème", img: "https://m.media-amazon.com/images/I/61vOBIGMiBL._SL1500_.jpg", link: "https://amzn.to/4u5mrFQ", bullet: "• Plumps skin. • Anti-wrinkle. • Vitality boost.", desc: "This luxurious <strong>iS Clinical</strong> firming cream is designed to target visible signs of aging. It works by plumping the skin and improving collagen appearance over time."},
+{name: "Youth Eye Complex", img: "https://m.media-amazon.com/images/I/6187q29z3uL._SL1500_.jpg", link: "https://amzn.to/4nvh4NB", bullet: "• Reduces puffiness. • Firms. • Brightens.", desc: "Specifically formulated for the delicate eye area, this <strong>iS Clinical</strong> treatment hydrates, firms, and brightens. It effectively targets puffiness and dark circles."},
+{name: "Sheald Recovery Balm", img: "https://m.media-amazon.com/images/I/71UIyy2n1EL._SL1500_.jpg", link: "https://amzn.to/4doNwfU", bullet: "• Healing. • Sensitive skin. • Hydrating.", desc: "This specialized <strong>iS Clinical</strong> healing balm is a must-have for sensitive skin. Its rich formula provides a protective barrier and intense hydration."},
+{name: "Eclipse SPF 50+", img: "https://m.media-amazon.com/images/I/6107DBTxpXL._SL1500_.jpg", link: "https://amzn.to/4txhuEz", bullet: "• Sheer tint. • Non-greasy. • Broad-spectrum.", desc: "Providing superior broad-spectrum protection, this ultra-sheer <strong>iS Clinical</strong> sunscreen features a non-greasy, matte finish."}
+];
+products.forEach(p => {
+document.write(`<div class="flex flex-col border p-6 hover:shadow-lg transition">
+<img src="${p.img}" class="h-64 object-contain mb-6">
+<h3 class="text-xl font-semibold mb-2">${p.name}</h3>
+<ul class="text-sm text-slate-600 mb-4">${p.bullet.split('. ').map(b => `<li>${b.trim()}</li>`).join('')}</ul>
+<details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-sm">Read More</summary><p class="text-sm text-slate-700 bg-slate-50 p-4 mt-2">${p.desc}</p></details>
+<a href="${p.link}" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-sm hover:bg-blue-800">View on Amazon</a>
+</div>`);
+});
+</script>
+</div>
+</div>
+</section>
+
+
+<!-- Slider Section -->
+<section class="py-16 bg-white border-y border-gray-100">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-serif mb-12 text-center text-slate-900">Featured Skincare Essentials</h2>
+
+
+<!-- Slider Container -->
+<div class="swiper mySwiper">
+<div class="swiper-wrapper pb-12">
+<!-- Slide 1 -->
+<div class="swiper-slide flex justify-center"><img src="https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg" class="h-64 object-contain"></div>
+<!-- Slide 2 -->
+<div class="swiper-slide flex justify-center"><img src="https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg" class="h-64 object-contain"></div>
+<!-- Slide 3 -->
+<div class="swiper-slide flex justify-center"><img src="https://m.media-amazon.com/images/I/61oT64Q+KUL._SL1500_.jpg" class="h-64 object-contain"></div>
+<!-- Slide 4 -->
+<div class="swiper-slide flex justify-center"><img src="https://m.media-amazon.com/images/I/61WWrCkkRhL._SL1500_.jpg" class="h-64 object-contain"></div>
+<!-- Slide 5 -->
+<div class="swiper-slide flex justify-center"><img src="https://m.media-amazon.com/images/I/51Shz7BpI9L._SL1500_.jpg" class="h-64 object-contain"></div>
+<!-- Slide 6 -->
+<div class="swiper-slide flex justify-center"><img src="https://m.media-amazon.com/images/I/61P6oMxVFiL._SL1500_.jpg" class="h-64 object-contain"></div>
+</div>
+<!-- Navigation Arrows -->
+<div class="swiper-button-next text-blue-900"></div>
+<div class="swiper-button-prev text-blue-900"></div>
+<!-- Pagination -->
+<div class="swiper-pagination"></div>
+</div>
+</div>
+</section>
+
+
+<!-- Required Swiper Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+slidesPerView: 1,
+spaceBetween: 20,
+loop: true,
+autoplay: {
+delay: 3000,
+disableOnInteraction: false,
+},
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+navigation: {
+nextEl: ".swiper-button-next",
+prevEl: ".swiper-button-prev",
+},
+breakpoints: {
+640: { slidesPerView: 2 },
+1024: { slidesPerView: 4 },
+},
+});
+</script>
+
+
+<!-- Shop by Concern: Anti-Aging Section -->
+<section id="anti-aging" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-serif mb-16 text-center text-slate-900">Advanced Anti-Aging Solutions</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+<!-- P1: Daily Dynamic Hydrator -->
+<div class="flex flex-col border p-6 hover:shadow-lg transition">
+<img src="https://m.media-amazon.com/images/I/61nd0rIo9LL._SL1500_.jpg" class="h-48 object-contain mb-6">
+<h3 class="text-lg font-semibold mb-2">Daily Dynamic Hydrator</h3>
+<ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Promotes skin vitality.</li><li>• Deep sustained hydration.</li><li>• Brightens skin tone.</li></ul>
+<details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">Powered by advanced technology, this formula promotes visible improvements in skin tone and vitality. It delivers deep, sustained hydration while supporting the skin's natural protective barrier, making it perfect for all skin types, including dehydrated or sensitive complexions.</p></details>
+<a href="https://amzn.to/42wZteP" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+</div>
+
+
+<!-- P2: Reparative Moisture Emulsion -->
+<div class="flex flex-col border p-6 hover:shadow-lg transition">
+<img src="https://m.media-amazon.com/images/I/51Shz7BpI9L._SL1500_.jpg" class="h-48 object-contain mb-6">
+<h3 class="text-lg font-semibold mb-2">Reparative Moisture</h3>
+<ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Intense hydration.</li><li>• Reduces fine lines.</li><li>• Surface moisture lock.</li></ul>
+<details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">This intensive moisturizer offers deep, surface-level hydration. It smooths the appearance of fine lines and reinforces the skin's barrier, providing essential nutrients for a plump and revitalized look throughout the day.</p></details>
+<a href="https://amzn.to/4tN59fW" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+</div>
+
+
+<!-- P3: Moisturizing Complex -->
+<div class="flex flex-col border p-6 hover:shadow-lg transition">
+<img src="https://m.media-amazon.com/images/I/51oIJ2EtRkL._SL1500_.jpg" class="h-48 object-contain mb-6">
+<h3 class="text-lg font-semibold mb-2">Moisturizing Complex</h3>
+<ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Vitamin A infused.</li><li>• Environmental shield.</li><li>• Retains moisture.</li></ul>
+<details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">A sophisticated formula providing vital protection against environmental damage. This nutrient-rich cream helps the skin retain essential moisture, promoting a smoother, firmer, and more resilient appearance.</p></details>
+<a href="https://amzn.to/4uQr5rg" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+</div>
+
+
+<!-- P4: Neckperfect Complex -->
+<div class="flex flex-col border p-6 hover:shadow-lg transition">
+<img src="https://m.media-amazon.com/images/I/51TuXkymyTL._SL1500_.jpg" class="h-48 object-contain mb-6">
+<h3 class="text-lg font-semibold mb-2">Neckperfect Complex</h3>
+<ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Lifts and sculpts.</li><li>• Restores firmness.</li><li>• Smoothes texture.</li></ul>
+<details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">Designed specifically for the neck and décolleté, this firming cream restores elasticity and sculpted definition. It actively reduces the appearance of fine lines and "crepey" skin, leaving the area feeling tighter and more youthful.</p></details>
+<a href="https://amzn.to/4txZn1n" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+</div>
+
+
+</div>
+
+
+<!-- Explore More Button -->
+<div class="text-center mt-12">
+<a href="https://amzn.to/4tBwb9G" target="_blank" rel="noopener noreferrer" class="bg-blue-900 text-white px-10 py-4 font-semibold uppercase tracking-widest hover:bg-blue-800 transition shadow-lg inline-block">
+Explore More Anti-Aging on Amazon
+</a>
+</div>
+</div>
+</section>
+<!-- Shop by Concern: Congestion & Imperfections Section -->
+<section id="congestion" class="py-20 bg-blue-900 text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-serif mb-16 text-center text-white">Congestion & Imperfections</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- P1: Hydra-Intensive Cooling Masque -->
+            <div class="bg-white text-slate-800 p-6 shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/51Wy8vsOYOL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Hydra-Intensive Cooling Masque</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Delivers intense hydration.</li><li>• Refreshing, cool sensation.</li><li>• Soothes with botanicals.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">This cooling mask is an ideal at-home treatment for compromised complexions. Featuring a botanical blend of aloe vera, rosemary, and hyaluronic acid, this professional formula nourishes and revives tired skin, leaving it luminous and invigorated.</p></details>
+                <a href="https://amzn.to/4dmJ4OU" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P2: Smooth & Soothe Facial -->
+            <div class="bg-white text-slate-800 p-6 shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/61zu8AuxFGL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Smooth & Soothe Facial</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Physical & chemical exfoliation.</li><li>• Resurfaces and polishes.</li><li>• Provides deep hydration.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">Bring the clinical experience home with this dual-action facial kit. By combining effective exfoliation with nourishing, hydrating botanical support, this set helps polish away dullness to reveal a smoother, brighter complexion.</p></details>
+                <a href="https://amzn.to/4nQ9X2N" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P3: Pure Clarity Collection -->
+            <div class="bg-white text-slate-800 p-6 shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/71VEMMgClhL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Pure Clarity Collection</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Deep-cleansing regimen.</li><li>• Reduces blemish frequency.</li><li>• Minimizes pore size.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">This comprehensive full-regimen kit is designed specifically for those prone to breakouts. It combines deep-cleansing properties with resurfacing and SPF protection to treat, clarify, and protect blemish-prone skin effectively.</p></details>
+                <a href="https://amzn.to/43fJLEU" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P4: Warm Up, Cool Down Facial -->
+            <div class="bg-white text-slate-800 p-6 shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/61oQAuc5EGL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Warm Up, Cool Down Facial</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Gently exfoliates.</li><li>• Refreshes skin tone.</li><li>• Antioxidant protection.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">This at-home duo facial treatment offers a dual-phase experience to cleanse and invigorate. By delivering intense hydration alongside antioxidant protection, it supports overall skin health and achieves a healthy, glowing appearance.</p></details>
+                <a href="https://amzn.to/4dx88mv" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+        </div>
+        
+        <!-- Explore More Button -->
+        <div class="text-center mt-12">
+            <a href="https://amzn.to/4932R4L" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-900 px-10 py-4 font-semibold uppercase tracking-widest hover:bg-gray-100 transition shadow-lg inline-block">
+                Explore More Congestion & Imperfections
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Clickable Hero Image Section with Fade Effect -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+        <!-- Wrap the image in an <a> tag to make it clickable -->
+        <a href="https://amzn.to/3P87tQp" target="_blank" rel="noopener noreferrer" class="block max-w-4xl mx-auto">
+            <img 
+                src="image1.webp" 
+                alt="Shop Professional iS Clinical Skincare" 
+                class="animate-fade w-full h-auto rounded-xl shadow-2xl transition-opacity duration-1000"
+            >
+        </a>
+        
+        <!-- Optional text below -->
+        <div class="mt-8">
+            <h2 class="text-3xl font-serif text-blue-900">Expert Care for Every Skin Type</h2>
+            <p class="text-slate-600 mt-2">Experience the precision of clinical-grade formulas.</p>
+        </div>
+    </div>
+</section>
+<!-- Shop by Concern: Dryness Section -->
+<section id="dryness" class="py-20 bg-blue-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-serif mb-16 text-center text-blue-900">Dryness & Hydration Solutions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- P1: Cream Cleanser -->
+            <div class="bg-white flex flex-col border border-blue-100 p-6 hover:shadow-lg transition">
+                <img src="https://m.media-amazon.com/images/I/51GXxqFYkBL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Cream Cleanser</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Removes impurities gently.</li><li>• Replenishes hydration.</li><li>• Calms redness.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">This hydrating facial cleanser effectively removes makeup and daily impurities while respecting your skin's moisture barrier. Infused with soothing botanicals, it calms irritation and leaves the complexion feeling soft, supple, and perfectly refreshed.</p></details>
+                <a href="https://amzn.to/42B3dfl" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P2: Sheald Recovery Balm -->
+            <div class="bg-white flex flex-col border border-blue-100 p-6 hover:shadow-lg transition">
+                <img src="https://m.media-amazon.com/images/I/71UIyy2n1EL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Sheald Recovery Balm</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Powerful healing balm.</li><li>• Ideal for sensitive areas.</li><li>• Intense hydration.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">A specialized treatment designed to provide a protective barrier for compromised or dry skin. This recovery balm facilitates comfort and rapid improvement, making it a must-have for those seeking deep hydration and healing support.</p></details>
+                <a href="https://amzn.to/4eLQrBU" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P3: Copper Firming Mist -->
+            <div class="bg-white flex flex-col border border-blue-100 p-6 hover:shadow-lg transition">
+                <img src="https://m.media-amazon.com/images/I/51gSQyOR70L._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Copper Firming Mist</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Tones and firms.</li><li>• Revitalizing moisture.</li><li>• Makeup setting spray.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">This copper-infused mist tones and firms the skin, reducing the appearance of fine lines. It doubles as a refreshing setting spray, leaving the face feeling plump, revitalized, and perfectly prepared for the day.</p></details>
+                <a href="https://amzn.to/3RrjIIk" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P4: Youth Body Serum -->
+            <div class="bg-white flex flex-col border border-blue-100 p-6 hover:shadow-lg transition">
+                <img src="https://m.media-amazon.com/images/I/61g1tGaGliL._SL1500_.jpg" class="h-48 object-contain mx-auto mb-6">
+                <h3 class="font-semibold text-sm mb-2">Youth Body Serum</h3>
+                <ul class="text-xs text-slate-600 mb-4 space-y-1"><li>• Lightweight mist.</li><li>• Antioxidant protection.</li><li>• Softens body skin.</li></ul>
+                <details class="mb-4"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 bg-slate-50 p-4 mt-2">A refreshing, lightweight serum mist that absorbs quickly to provide powerful hydration. Perfect for post-sun exposure or daily body care, it leaves the skin feeling exceptionally soft, nourished, and protected.</p></details>
+                <a href="https://amzn.to/4dhnT28" target="_blank" class="block text-center bg-blue-900 text-white py-2 uppercase tracking-widest text-xs hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+        </div>
+        
+        <!-- Explore More Button -->
+        <div class="text-center mt-12">
+            <a href="https://amzn.to/43cEyxL" target="_blank" rel="noopener noreferrer" class="bg-blue-900 text-white px-10 py-4 font-semibold uppercase tracking-widest hover:bg-blue-800 transition shadow-lg inline-block">
+                Explore More Dryness Solutions on Amazon
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Eyes, Lips + Neck Section -->
+<section id="eye-lip-neck" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-serif mb-4 text-center text-blue-900">Eyes, Lips + Neck</h2>
+        <p class="text-center text-slate-600 mb-16 max-w-2xl mx-auto italic">Targeted treatments designed for delicate areas to restore firmness, hydration, and youthful volume.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- P1: GeneXC Eye Gel -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-transparent hover:border-blue-200">
+                <img src="https://m.media-amazon.com/images/I/51FMQ9KvE9L._SL1500_.jpg" class="h-56 mx-auto object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">GeneXC Firming Eye Gel</h3>
+                <ul class="text-xs text-slate-500 mb-4 space-y-1"><li>• Brightens and radiates.</li><li>• Firms delicate skin.</li><li>• Hydrates and conditions.</li></ul>
+                <details class="mb-6"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 mt-2">Harnessing exclusive plant extracts and potent Vitamin C, this firming gel promotes visible radiance. It smooths fine lines while delivering deep hydration, leaving the under-eye area looking bright, conditioned, and revitalized.</p></details>
+                <a href="https://amzn.to/4nzcRss" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P2: Lip Duo -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-transparent hover:border-blue-200">
+                <img src="https://m.media-amazon.com/images/I/41zrurPSgnL._SL1080_.jpg" class="h-56 mx-auto object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Lip Polish & Elixir Duo</h3>
+                <ul class="text-xs text-slate-500 mb-4 space-y-1"><li>• Exfoliates and polishes.</li><li>• Nourishes and plumps.</li><li>• Smooths lip texture.</li></ul>
+                <details class="mb-6"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 mt-2">This advanced two-step system is designed to gently exfoliate away roughness while locking in deep moisture. The result is a nourished, hydrated, and noticeably smoother lip appearance.</p></details>
+                <a href="https://amzn.to/4980spr" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P3: Lip Polish -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-transparent hover:border-blue-200">
+                <img src="https://m.media-amazon.com/images/I/51-WardmZHL._SL1500_.jpg" class="h-56 mx-auto object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Lip Polish</h3>
+                <ul class="text-xs text-slate-500 mb-4 space-y-1"><li>• Gentle exfoliator.</li><li>• Conditions and hydrates.</li><li>• Antioxidant protection.</li></ul>
+                <details class="mb-6"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 mt-2">A soothing, hydrating scrub that refines lip texture by gently removing dry skin. It conditions and hydrates, providing essential antioxidant protection for a softer, healthier pout.</p></details>
+                <a href="https://amzn.to/4wpuhM2" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P4: Liprotect SPF 35 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-transparent hover:border-blue-200">
+                <img src="https://m.media-amazon.com/images/I/41WzHtQ4R0L._SL1500_.jpg" class="h-56 mx-auto object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Liprotect SPF 35</h3>
+                <ul class="text-xs text-slate-500 mb-4 space-y-1"><li>• Broad-spectrum protection.</li><li>• Vitamin E & Coconut Oil.</li><li>• Non-sticky finish.</li></ul>
+                <details class="mb-6"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 mt-2">Protect your lips from environmental stressors and sun damage. This antioxidant-rich SPF balm conditions with botanical lipids, keeping lips hydrated and shielded without any sticky residue.</p></details>
+                <a href="https://amzn.to/4fqWYC8" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P5: Youth Lip Elixir -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-transparent hover:border-blue-200">
+                <img src="https://m.media-amazon.com/images/I/61-hBLyzCdL._SL1500_.jpg" class="h-56 mx-auto object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Youth Lip Elixir</h3>
+                <ul class="text-xs text-slate-500 mb-4 space-y-1"><li>• Plumping hydration.</li><li>• Rich botanical complex.</li><li>• Environmental defense.</li></ul>
+                <details class="mb-6"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 mt-2">A luxurious elixir that enhances the appearance of the lips through deep moisture. Formulated with Hyaluronic Acid and essential vitamins, it provides unparalleled comfort and protection.</p></details>
+                <a href="https://amzn.to/4tJIWzl" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P6: Neckperfect Complex -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-transparent hover:border-blue-200">
+                <img src="https://m.media-amazon.com/images/I/51TuXkymyTL._SL1500_.jpg" class="h-56 mx-auto object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Neckperfect Complex</h3>
+                <ul class="text-xs text-slate-500 mb-4 space-y-1"><li>• Lifts and tightens.</li><li>• Restores elasticity.</li><li>• Smoothes fine lines.</li></ul>
+                <details class="mb-6"><summary class="cursor-pointer text-blue-700 underline text-xs">Read More</summary><p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 mt-2">Specifically crafted for the neck and décolleté, this firming cream restores sculpted definition. It actively targets the appearance of "crepey" skin to reveal a tighter, younger-looking profile.</p></details>
+                <a href="https://amzn.to/4doCpUs" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="https://amzn.to/493HcJD" target="_blank" rel="noopener noreferrer" class="bg-blue-900 text-white px-10 py-4 font-bold uppercase tracking-widest hover:bg-blue-800 transition shadow-lg inline-block">
+                Explore More Eyes, Lips + Neck Solutions
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Clickable Product Slider Section -->
+<section class="py-16 bg-white border-t border-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-serif mb-12 text-center text-slate-900">Explore Our Featured Selection</h2>
+        
+        <div class="swiper productSwiper">
+            <div class="swiper-wrapper" id="slider-container">
+                <!-- Swiper slides will be injected by JavaScript -->
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-next text-blue-900"></div>
+            <div class="swiper-button-prev text-blue-900"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const sliderProducts =[
+        {img: "https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg", link: "https://amzn.to/4nty9Yl"},
+        {img: "https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg", link: "https://amzn.to/4930qz1"},
+        {img: "https://m.media-amazon.com/images/I/61oT64Q+KUL._SL1500_.jpg", link: "https://amzn.to/4nrxwym"},
+        {img: "https://m.media-amazon.com/images/I/61WWrCkkRhL._SL1500_.jpg", link: "https://amzn.to/4wwugWy"},
+        {img: "https://m.media-amazon.com/images/I/51Shz7BpI9L._SL1500_.jpg", link: "https://amzn.to/4nA9di8"},
+        {img: "https://m.media-amazon.com/images/I/61P6oMxVFiL._SL1500_.jpg", link: "https://amzn.to/3RdD17W"},
+        {img: "https://m.media-amazon.com/images/I/614cAHMAIQL._SL1500_.jpg", link: "https://amzn.to/4dlFp3N"},
+        {img: "https://m.media-amazon.com/images/I/51oIJ2EtRkL._SL1500_.jpg", link: "https://amzn.to/4dkvqgF"},
+        {img: "https://m.media-amazon.com/images/I/61vOBIGMiBL._SL1500_.jpg", link: "https://amzn.to/4u5mrFQ"},
+        {img: "https://m.media-amazon.com/images/I/6187q29z3uL._SL1500_.jpg", link: "https://amzn.to/4nvh4NB"}
+    ];
+
+    const sliderContainer = document.getElementById('slider-container');
+    sliderProducts.forEach(p => {
+        sliderContainer.innerHTML += `
+            <div class="swiper-slide">
+                <a href="${p.link}" target="_blank" class="block p-4 border border-gray-100 hover:shadow-lg transition">
+                    <img src="${p.img}" class="h-64 object-contain mx-auto">
+                </a>
+            </div>
+        `;
+    });
+
+    new Swiper(".productSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: { delay: 2000, disableOnInteraction: false },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 5 } }
+    });
+</script>
+<!-- Collections Section -->
+<section id="collections" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-serif mb-4 text-center text-blue-900">Curated Collections</h2>
+        <p class="text-center text-slate-600 mb-16 italic">Complete professional-grade regimens for specific skin goals.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- P1: Post-Procedure Kit -->
+            <div class="flex flex-col border border-gray-100 p-6 hover:shadow-xl transition">
+                <img src="https://m.media-amazon.com/images/I/71E97QNWyvL._SL1500_.jpg" class="h-64 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Post-Procedure Kit System</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A specialized regimen designed to aid in the healing process and decrease downtime after professional treatments. Helps soothe irritation and promote rapid skin recovery.</p>
+                <a href="https://amzn.to/4tMy2st" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P2: Pure Radiance Collection -->
+            <div class="flex flex-col border border-gray-100 p-6 hover:shadow-xl transition">
+                <img src="https://m.media-amazon.com/images/I/71tmJlFVYrL._SL1500_.jpg" class="h-64 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Pure Radiance Collection</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">An all-in-one kit designed to even skin tone. Formulated to minimize the appearance of dark spots and hyperpigmentation while promoting a healthy, bright, and protected complexion.</p>
+                <a href="https://amzn.to/3RuFFpU" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P3: Pure Calm Collection -->
+            <div class="flex flex-col border border-gray-100 p-6 hover:shadow-xl transition">
+                <img src="https://m.media-amazon.com/images/I/71OfM-f3I-L._SL1500_.jpg" class="h-64 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Pure Calm Collection</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Featuring best-selling products to cleanse, rejuvenate, and soothe. This kit is ideal for calming sensitive or compromised skin while providing SPF 50+ protection.</p>
+                <a href="https://amzn.to/4dih8Nm" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P4: Pure Renewal Collection -->
+            <div class="flex flex-col border border-gray-100 p-6 hover:shadow-xl transition">
+                <img src="https://m.media-amazon.com/images/I/71yWF1xHeBL._SL1500_.jpg" class="h-64 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Pure Renewal Collection</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">An age-defying kit that focuses on skin regeneration. Delivers nourishing hydration and supports firming goals to reduce the appearance of fine lines and wrinkles.</p>
+                <a href="https://amzn.to/4fmDpLm" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P5: Pure Clarity Collection -->
+            <div class="flex flex-col border border-gray-100 p-6 hover:shadow-xl transition">
+                <img src="https://m.media-amazon.com/images/I/71VEMMgClhL._SL1500_.jpg" class="h-64 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Pure Clarity Collection</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Specifically curated for blemish-prone skin. Deeply cleanses and treats breakouts while refining pore size and offering essential broad-spectrum sun defense.</p>
+                <a href="https://amzn.to/4nC4D2I" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+
+            <!-- P6: Warm Up, Cool Down Facial -->
+            <div class="flex flex-col border border-gray-100 p-6 hover:shadow-xl transition">
+                <img src="https://m.media-amazon.com/images/I/61oQAuc5EGL._SL1500_.jpg" class="h-64 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Warm Up, Cool Down Facial</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A powerful at-home duo facial treatment. It cleanses, gently exfoliates, and provides deep hydration to support optimal skin health and a natural, radiant glow.</p>
+                <a href="https://amzn.to/42BH5Bs" target="_blank" class="flex items-center justify-center w-full bg-blue-900 text-white py-3 uppercase tracking-widest text-sm font-bold hover:bg-blue-800 transition">View on Amazon</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Blog Section -->
+<section id="Blog" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-serif mb-16 text-center text-blue-900">Clinical Insights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Blog Card Template (Repeat 6 times) -->
+            <div class="bg-white p-6 shadow-sm hover:shadow-md transition">
+                <div class="h-40 bg-blue-100 mb-4"></div> <!-- Placeholder for Blog Image -->
+                <h3 class="font-bold text-lg mb-2">How to Build Your Perfect Skincare Routine</h3>
+                <p class="text-sm text-slate-600 mb-4">Learn the professional steps to layer your serums and moisturizers for maximum efficacy...</p>
+                <a href="blog.html" class="text-blue-900 font-bold underline text-sm">Read Article</a>
+            </div>
+            <!-- Duplicate the above div 5 more times for 6 posts -->
+        </div>
+        <div class="text-center mt-12">
+            <a href="blog.html" class="bg-blue-900 text-white px-10 py-4 font-bold uppercase tracking-widest hover:bg-blue-800 transition shadow-lg inline-block">For More Posts Click Here</a>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+    <div class="container mx-auto px-6 max-w-2xl">
+        <h2 class="text-4xl font-serif mb-8 text-center text-blue-900">Get In Touch</h2>
+        <p class="text-center text-slate-600 mb-12">Have questions about your skincare routine? Send us a message and we will get back to you soon.</p>
+        
+        <form action="https://formspree.io/f/xbdbjwpa" method="POST" class="bg-white p-8 shadow-sm border border-gray-100">
+            <div class="mb-6">
+                <label class="block text-sm font-bold mb-2 uppercase tracking-widest text-slate-700">Name</label>
+                <input type="text" name="name" required class="w-full px-4 py-3 border border-slate-200 focus:outline-none focus:border-blue-900 transition">
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-bold mb-2 uppercase tracking-widest text-slate-700">Email</label>
+                <input type="email" name="email" required class="w-full px-4 py-3 border border-slate-200 focus:outline-none focus:border-blue-900 transition">
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-bold mb-2 uppercase tracking-widest text-slate-700">Message</label>
+                <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-slate-200 focus:outline-none focus:border-blue-900 transition"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-900 text-white py-4 font-bold uppercase tracking-widest hover:bg-blue-800 transition">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-slate-900 text-white py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            
+            <!-- Brand Column -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4">CLINICAL<span class="text-blue-400">GUIDE</span></h2>
+                <p class="text-slate-400 text-sm italic">Providing expert-curated, professional-grade skincare solutions for your home regimen.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="font-bold text-lg mb-4 text-white uppercase tracking-widest">Quick Links</h3>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="#bestsellers" class="hover:text-blue-400">Best Sellers</a></li>
+                    <li><a href="#anti-aging" class="hover:text-blue-400">Anti-Aging Solutions</a></li>
+                    <li><a href="#congestion" class="hover:text-blue-400">Congestion & Imperfections</a></li>
+                    <li><a href="#dryness" class="hover:text-blue-400">Dryness & Hydration</a></li>
+                    <li><a href="#eye-lip-neck" class="hover:text-blue-400">Eyes, Lips + Neck</a></li>
+                    <li><a href="/blogs/" class="hover:text-blue-400">Our Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="font-bold text-lg mb-4 text-white uppercase tracking-widest">Support</h3>
+                <p class="text-slate-400 text-sm mb-4">Have questions? Send us a message via our contact form.</p>
+                <a href="#contact" class="text-blue-400 font-bold underline">Go to Contact Form</a>
+            </div>
+        </div>
+
+        <!-- Compliance & Copyright -->
+        <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+            <p class="mb-4"><strong>Affiliate Disclosure:</strong> This independent digital boutique, Clinical Guide, is an official affiliate showcase for clinical-grade skincare products. As an Amazon Associate, we earn a commission from qualifying purchases made through the links provided on this platform. If you click on a product and finalize a purchase on Amazon, we may receive a small percentage of the sale at no additional cost to you. These earnings allow us to maintain this high-end curation and provide detailed insights into professional skincare science. All product imagery, and trademarks remain the sole property of is clinical respective owners.</p>
+            <p>&copy; 2026 Clinical Guide. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>var swiper = new Swiper(".mySwiper", { slidesPerView: 3, spaceBetween: 30, loop: true, autoplay: { delay: 2500 } });</script>
+</body>
+</html>
