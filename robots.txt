@@ -1,4 +1,16 @@
+# General Crawlers
 User-agent: *
 Allow: /
 
+# Specifically inviting AI Bots to index your site content
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
 Sitemap: https://www.clinicalguidehub.online/sitemap.xml
