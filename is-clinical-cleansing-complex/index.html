@@ -118,14 +118,18 @@
         </div>
     </section>
 
-    <!-- Comment Section -->
-    <section class="py-12 container mx-auto px-6 max-w-4xl">
-        <div class="p-6 border bg-white shadow-sm">
-            <h3 class="font-bold mb-4">Leave a Comment</h3>
-            <textarea class="w-full border p-2 mb-2" rows="3" placeholder="Write your thoughts..."></textarea>
-            <button class="bg-blue-900 text-white px-6 py-2 uppercase font-bold text-sm">Post Comment</button>
-        </div>
-    </section>
+   <!-- Comment Section -->
+<section class="py-12 container mx-auto px-6 max-w-4xl">
+    <div class="p-6 border bg-white shadow-sm">
+        <h3 class="font-bold mb-4">Leave a Comment</h3>
+        
+        <!-- THIS FORM TAG IS MANDATORY -->
+        <form action="https://formspree.io/f/xbdbjwpa" method="POST">
+            <textarea name="comment" class="w-full border p-2 mb-2" rows="3" placeholder="Write your thoughts..." required></textarea>
+            <button type="submit" class="bg-blue-900 text-white px-6 py-2 uppercase font-bold text-sm">Post Comment</button>
+        </form>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-white py-10 text-center text-sm">
