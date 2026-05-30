@@ -208,21 +208,25 @@
   </p>
   <p style="margin-top:12px;">© 2026 Clinical Guide. All rights reserved.</p>
 </footer>
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    const sliderProducts =[
+    const sliderProducts = [
         {img: "https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg", link: "https://amzn.to/4nty9Yl"},
         {img: "https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg", link: "https://amzn.to/4930qz1"}
     ];
     const container = document.getElementById('slider-container');
     sliderProducts.forEach(p => {
-        container.innerHTML += `<div class="swiper-slide"><a href="${p.link}" target="_blank"><img src="${p.img}" class="h-64 mx-auto object-contain"></a></div>`;
+        container.innerHTML += `<div class="swiper-slide" style="display:flex;align-items:center;justify-content:center;">
+            <a href="${p.link}" target="_blank" rel="nofollow sponsored">
+                <img src="${p.img}" style="height:200px;width:auto;object-fit:contain;display:block;margin:0 auto;">
+            </a>
+        </div>`;
     });
-    new Swiper(".productSwiper", { 
-        slidesPerView: 2, 
-        loop: true, 
-        autoplay: { delay: 2500 }, 
-        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" } 
+    new Swiper(".productSwiper", {
+        slidesPerView: 1,
+        loop: false,
+        autoplay: { delay: 2500 },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
     });
 </script>
 
