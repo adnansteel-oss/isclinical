@@ -178,15 +178,22 @@
     Buy Now on Amazon
   </a>
 </div>
-  <!-- Slider Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-2xl font-serif mb-12">More Professional Skincare</h3>
-            <div class="swiper productSwiper">
-                <div class="swiper-wrapper" id="slider-container"></div>
+ <!-- Slider Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+        <h3 class="text-2xl font-serif mb-12">More Professional Skincare</h3>
+        
+        <!-- Swiper Container -->
+        <div class="swiper productSwiper relative">
+            <div class="swiper-wrapper" id="slider-container">
+                <!-- Slides will be injected here by script -->
             </div>
+            <!-- Add Navigation Arrows -->
+            <div class="swiper-button-next text-blue-900"></div>
+            <div class="swiper-button-prev text-blue-900"></div>
         </div>
-    </section>
+    </div>
+</section>
 
   <div class="disclosure">
     <strong>Affiliate Disclosure:</strong> As an Amazon Associate, I earn from qualifying
@@ -205,22 +212,43 @@
   </p>
   <p style="margin-top:12px;">© 2026 Clinical Guide. All rights reserved.</p>
 </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const sliderProducts =[
-            {img: "https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg", link: "https://amzn.to/4nty9Yl"},
-            {img: "https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg", link: "https://amzn.to/4930qz1"},
-            {img: "https://m.media-amazon.com/images/I/61oT64Q+KUL._SL1500_.jpg", link: "https://amzn.to/4nrxwym"},
-            {img: "https://m.media-amazon.com/images/I/61WWrCkkRhL._SL1500_.jpg", link: "https://amzn.to/4wwugWy"},
-            {img: "https://m.media-amazon.com/images/I/51Shz7BpI9L._SL1500_.jpg", link: "https://amzn.to/4nA9di8"},
-            {img: "https://m.media-amazon.com/images/I/61P6oMxVFiL._SL1500_.jpg", link: "https://amzn.to/3RdD17W"}
-        ];
-        const container = document.getElementById('slider-container');
-        sliderProducts.forEach(p => {
-            container.innerHTML += `<div class="swiper-slide"><a href="${p.link}" target="_blank"><img src="${p.img}" class="h-64 mx-auto object-contain"></a></div>`;
-        });
-        new Swiper(".productSwiper", { slidesPerView: 3, loop: true, autoplay: { delay: 2000 }, breakpoints: { 1024: { slidesPerView: 5 } } });
-    </script>
+ <!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const sliderProducts =[
+        {img: "https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg", link: "https://amzn.to/4nty9Yl"},
+        {img: "https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg", link: "https://amzn.to/4930qz1"},
+        {img: "https://m.media-amazon.com/images/I/61oT64Q+KUL._SL1500_.jpg", link: "https://amzn.to/4nrxwym"},
+        {img: "https://m.media-amazon.com/images/I/61WWrCkkRhL._SL1500_.jpg", link: "https://amzn.to/4wwugWy"},
+        {img: "https://m.media-amazon.com/images/I/51Shz7BpI9L._SL1500_.jpg", link: "https://amzn.to/4nA9di8"},
+        {img: "https://m.media-amazon.com/images/I/61P6oMxVFiL._SL1500_.jpg", link: "https://amzn.to/3RdD17W"}
+    ];
+    
+    const container = document.getElementById('slider-container');
+    sliderProducts.forEach(p => {
+        container.innerHTML += `
+            <div class="swiper-slide">
+                <a href="${p.link}" target="_blank">
+                    <img src="${p.img}" class="h-64 mx-auto object-contain hover:opacity-80 transition">
+                </a>
+            </div>`;
+    });
+
+    new Swiper(".productSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: { delay: 2500, disableOnInteraction: false },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 5 }
+        }
+    });
+</script>
 
 </body>
 </html>
