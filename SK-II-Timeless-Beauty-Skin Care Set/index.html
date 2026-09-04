@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SK-II Timeless Beauty Skin Care Set — The PITERA™ Ritual, In One Box</title>
+<meta name="description" content="A closer look at the SK-II Timeless Beauty Skin Care Set — the full-size Facial Treatment Essence paired with two Advanced Cream minis — plus where to find today's price.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#f6f0e6;
+    --paper:#fbf7f0;
+    --charcoal:#18130f;
+    --charcoal-soft:#2a221c;
+    --gold:#b5904f;
+    --gold-light:#d8bd85;
+    --wine:#6f2c3a;
+    --blush:#e7cfc6;
+    --ink:#211c17;
+    --ink-soft:#6b6156;
+    --line:#e3d8c6;
+    --radius:6px;
+    --max:1160px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Jost', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    color:var(--charcoal);
+    margin:0;
+    line-height:1.08;
+  }
+  p{margin:0 0 1em;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 30px;}
+  .eyebrow{
+    font-family:'Jost',sans-serif;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:500;
+    margin-bottom:16px;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- disclosure ribbon ---------- */
+  .disclosure-bar{
+    background:var(--charcoal);
+    color:#cdc3b6;
+    font-size:12.5px;
+    text-align:center;
+    padding:9px 20px;
+    letter-spacing:.01em;
+  }
+  .disclosure-bar a{color:var(--gold-light); text-decoration:underline;}
+
+  /* ---------- header ---------- */
+  header{
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    position:sticky; top:0; z-index:40;
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 30px;
+    max-width:var(--max); margin:0 auto;
+  }
+  .brand{
+    font-family:'Cormorant Garamond',serif; font-weight:500; font-size:22px; color:var(--charcoal);
+    text-decoration:none; letter-spacing:.03em;
+  }
+  .brand em{font-style:normal; color:var(--gold);}
+  .nav-cta{
+    background:var(--charcoal);
+    color:var(--ivory);
+    font-weight:500;
+    font-size:13.5px;
+    letter-spacing:.04em;
+    padding:11px 22px;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:background .18s ease;
+  }
+  .nav-cta:hover{background:var(--wine);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse 800px 480px at 82% 0%, rgba(181,144,79,.14), transparent 60%),
+      radial-gradient(ellipse 600px 420px at 5% 95%, rgba(111,44,58,.10), transparent 60%),
+      var(--ivory);
+    padding:70px 0 96px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1fr .92fr; gap:56px; align-items:center;
+  }
+  .hero-kicker{
+    display:inline-flex; align-items:center; gap:9px;
+    border:1px solid var(--gold);
+    color:var(--wine);
+    font-size:12px; font-weight:500; letter-spacing:.1em; text-transform:uppercase;
+    padding:7px 16px;
+    margin-bottom:26px;
+  }
+  .hero h1{
+    font-size:clamp(36px,4.6vw,58px);
+    max-width:13ch;
+    font-style:italic;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--wine);
+  }
+  .hero p.lead{
+    margin-top:22px;
+    font-size:18px;
+    color:var(--ink-soft);
+    max-width:44ch;
+  }
+  .price-row{
+    display:flex; align-items:baseline; gap:14px; margin:30px 0 8px;
+  }
+  .price-now{font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:600; color:var(--charcoal);}
+  .price-note{font-size:13px; color:var(--ink-soft); margin-bottom:28px; max-width:38ch;}
+  .cta-row{display:flex; gap:16px; flex-wrap:wrap;}
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--charcoal); color:var(--ivory);
+    font-weight:500; font-size:14.5px; letter-spacing:.05em;
+    padding:16px 30px;
+    text-decoration:none;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .btn-primary:hover{background:var(--wine); transform:translateY(-2px);}
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:8px;
+    background:transparent; color:var(--charcoal);
+    border:1px solid var(--charcoal);
+    font-weight:500; font-size:14px; letter-spacing:.04em;
+    padding:15px 26px;
+    text-decoration:none;
+    transition:border-color .2s ease, opacity .2s ease;
+  }
+  .btn-ghost:hover{opacity:.65;}
+
+  /* ---------- 3D hero stage ---------- */
+  .stage{
+    perspective:1500px;
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+  }
+  .stage-glow{
+    position:absolute; width:380px; height:380px; border-radius:50%;
+    background:radial-gradient(circle, rgba(181,144,79,.22), transparent 65%);
+    filter:blur(8px);
+  }
+  .tilt-card{
+    position:relative;
+    transform-style:preserve-3d;
+    transform:rotateX(6deg) rotateY(-12deg);
+    transition:transform .35s ease;
+    width:min(400px, 80vw);
+  }
+  .tilt-card img{
+    width:100%;
+    border-radius:2px;
+    box-shadow:
+      0 44px 74px -22px rgba(24,19,15,.35),
+      0 12px 26px rgba(24,19,15,.2);
+    transform:translateZ(40px);
+  }
+  .float-badge{
+    position:absolute;
+    background:#fff;
+    padding:13px 17px;
+    box-shadow:0 20px 36px rgba(24,19,15,.16);
+    transform:translateZ(90px);
+    font-family:'Jost',sans-serif;
+    border-left:2px solid var(--gold);
+  }
+  .float-badge.b1{ top:-4%; left:-16%; }
+  .float-badge.b2{ bottom:0%; right:-14%; }
+  .badge-num{font-family:'Cormorant Garamond',serif; font-size:21px; font-weight:600; color:var(--charcoal); line-height:1;}
+  .badge-lbl{font-size:11px; color:var(--ink-soft); margin-top:3px; letter-spacing:.02em;}
+
+  /* ---------- trust strip ---------- */
+  .trust{
+    background:var(--charcoal);
+    color:var(--ivory);
+    padding:24px 0;
+  }
+  .trust-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+    text-align:center;
+  }
+  .trust-item{font-size:12.5px; color:#c6bcae; font-weight:400; letter-spacing:.02em;}
+  .trust-item strong{display:block; font-family:'Cormorant Garamond',serif; color:var(--gold-light); font-size:17px; font-weight:500; margin-bottom:3px;}
+
+  /* ---------- section shell ---------- */
+  section{padding:92px 0;}
+  .section-head{max-width:600px; margin-bottom:54px;}
+  .section-head.center{margin-left:auto; margin-right:auto; text-align:center;}
+  .section-head h2{font-size:clamp(28px,3.2vw,38px); font-style:italic;}
+  .section-head p{color:var(--ink-soft); font-size:16.5px; margin-top:16px;}
+
+  /* ---------- gallery ---------- */
+  .gallery-strip{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    grid-template-rows:auto auto;
+    gap:20px;
+  }
+  .g-item{
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    background:#fff;
+    border:1px solid var(--line);
+    perspective:900px;
+  }
+  .g-item img{
+    aspect-ratio:4/5; object-fit:cover; width:100%;
+    transition:transform .55s cubic-bezier(.2,.8,.2,1);
+  }
+  .g-item:hover img{ transform:scale(1.05) rotateX(2deg) rotateY(-3deg); }
+  .g-item .g-cap{
+    position:absolute; left:0; right:0; bottom:0;
+    background:linear-gradient(0deg, rgba(24,19,15,.82), transparent);
+    color:#fff; font-size:12.5px; padding:24px 14px 12px; letter-spacing:.02em;
+    opacity:0; transition:opacity .25s ease;
+  }
+  .g-item:hover .g-cap{opacity:1;}
+  .g-item.tall{grid-row:span 2;}
+  .g-item.tall img{aspect-ratio:auto; height:100%;}
+
+  /* ---------- article / feature rows ---------- */
+  .feature-row{
+    display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:center;
+    padding:56px 0;
+    border-top:1px solid var(--line);
+  }
+  .feature-row:first-of-type{border-top:none;}
+  .feature-row.reverse{grid-template-columns:1.15fr .85fr;}
+  .feature-row.reverse .f-visual{order:2;}
+  .f-tag{
+    display:inline-block; font-size:11.5px; font-weight:500; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--wine);
+    margin-bottom:18px;
+  }
+  .feature-row h3{font-size:26px; margin-bottom:16px; font-style:italic;}
+  .feature-row p{color:var(--ink-soft); font-size:15.5px;}
+  .f-visual{ perspective:1000px; }
+  .f-visual .frame{
+    background:linear-gradient(160deg, var(--blush) 0%, var(--ivory) 100%);
+    padding:30px;
+    transform:rotateY(-5deg) rotateX(2deg);
+    transition:transform .4s ease;
+    box-shadow:0 34px 64px -22px rgba(24,19,15,.22);
+  }
+  .f-visual:hover .frame{transform:rotateY(0deg) rotateX(0deg);}
+  .f-visual img{width:100%;}
+
+  /* ---------- stat band ---------- */
+  .stat-band{
+    background:var(--wine);
+    color:#fff;
+    padding:66px 0;
+  }
+  .stat-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+  }
+  .stat{border-left:1px solid rgba(255,255,255,.24); padding-left:24px;}
+  .stat .num{font-family:'Cormorant Garamond',serif; font-size:40px; color:var(--gold-light); font-weight:500;}
+  .stat .lbl{font-size:13.5px; color:#e6d5cf; margin-top:8px;}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:800px; margin:0 auto;}
+  .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:24px 0;
+  }
+  .faq-q{
+    display:flex; justify-content:space-between; align-items:center; gap:20px;
+    cursor:pointer; font-family:'Cormorant Garamond',serif; font-weight:500; font-size:19px; color:var(--charcoal); font-style:italic;
+  }
+  .faq-q .plus{
+    flex:0 0 auto; width:26px; height:26px; border-radius:50%;
+    border:1px solid var(--line); position:relative;
+  }
+  .faq-q .plus::before,.faq-q .plus::after{
+    content:""; position:absolute; background:var(--charcoal);
+    top:50%; left:50%; transform:translate(-50%,-50%);
+  }
+  .faq-q .plus::before{width:10px; height:1.5px;}
+  .faq-q .plus::after{width:1.5px; height:10px; transition:transform .25s ease;}
+  .faq-item.open .plus::after{transform:translate(-50%,-50%) rotate(90deg) scaleY(0);}
+  .faq-a{
+    max-height:0; overflow:hidden; transition:max-height .3s ease;
+    color:var(--ink-soft); font-size:15.5px;
+  }
+  .faq-item.open .faq-a{max-height:400px; margin-top:16px;}
+
+  /* ---------- final CTA ---------- */
+  .final-cta{
+    background:
+      radial-gradient(ellipse 700px 420px at 25% 15%, rgba(181,144,79,.16), transparent 60%),
+      var(--charcoal);
+    color:#fff; text-align:center; padding:100px 0;
+  }
+  .final-cta h2{color:#fff; font-size:clamp(30px,3.8vw,44px); max-width:16ch; margin:0 auto; font-style:italic;}
+  .final-cta p{color:#c6bcae; max-width:44ch; margin:20px auto 36px; font-size:16.5px;}
+  .final-cta .btn-primary{background:var(--gold); color:var(--charcoal);}
+  .final-cta .btn-primary:hover{background:var(--gold-light);}
+
+  /* ---------- footer / disclosure ---------- */
+  footer{background:var(--ivory); border-top:1px solid var(--line); padding:54px 0 36px;}
+  .disclosure-box{
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px 28px; font-size:13.5px; color:var(--ink-soft); margin-bottom:32px;
+  }
+  .disclosure-box strong{color:var(--charcoal);}
+  .foot-bottom{
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
+    font-size:13px; color:#9a8f7e;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:920px){
+    .hero-grid{grid-template-columns:1fr; gap:46px;}
+    .stage{order:-1;}
+    .trust-grid{grid-template-columns:repeat(2,1fr);}
+    .gallery-strip{grid-template-columns:repeat(2,1fr); grid-template-rows:auto;}
+    .g-item.tall{grid-row:auto;}
+    .g-item.tall img{aspect-ratio:4/5; height:auto;}
+    .feature-row, .feature-row.reverse{grid-template-columns:1fr; gap:32px;}
+    .feature-row.reverse .f-visual{order:0;}
+    .stat-grid{grid-template-columns:1fr; row-gap:34px;}
+    .stat{border-left:none; border-top:1px solid rgba(255,255,255,.24); padding-left:0; padding-top:20px;}
+  }
+  @media (max-width:560px){
+    .nav-cta{display:none;}
+    .float-badge{display:none;}
+    .tilt-card{transform:rotateX(3deg) rotateY(-6deg);}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure-bar">
+  As an Amazon Associate we earn from qualifying purchases. This page contains affiliate links — see full <a href="#disclosure">disclosure</a>.
+</div>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">Trending<em>Gadgets</em></a>
+    <a class="nav-cta" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">Check Price on Amazon</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:66px;">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-kicker">Limited Edition · Gift-Ready</span>
+        <h1>The <em>SK-II Timeless Beauty</em> Skin Care Set, in one box.</h1>
+        <p class="lead">A full-size Facial Treatment Essence paired with two Advanced Cream minis — the easiest way to start, travel with, or gift the ninety-year PITERA™ ritual without committing to a full shelf of bottles.</p>
+
+        <div class="price-row">
+          <span class="price-now">See current price</span>
+        </div>
+        <p class="price-note">Pricing on this limited-edition set moves with stock — check the live Amazon listing for today's number.</p>
+
+        <div class="cta-row">
+          <a class="btn-primary" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+            See Today's Price →
+          </a>
+          <a class="btn-ghost" href="#article">Read the full breakdown</a>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-glow"></div>
+        <div class="tilt-card" id="tiltCard">
+          <a href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61TXMAt6QlL._SL1500_.jpg" alt="SK-II Timeless Beauty Skin Care Set with Facial Treatment Essence and Advanced Cream minis">
+          </a>
+          <div class="float-badge b1">
+            <div class="badge-num">7.7oz</div>
+            <div class="badge-lbl">full-size Essence</div>
+          </div>
+          <div class="float-badge b2">
+            <div class="badge-num">2×</div>
+            <div class="badge-lbl">Advanced Cream minis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><strong>PITERA™</strong>SK-II's signature fermented ingredient</div>
+      <div class="trust-item"><strong>Full-Size</strong>7.7 oz Facial Treatment Essence</div>
+      <div class="trust-item"><strong>Travel-Ready</strong>two 0.5 oz Advanced Cream minis</div>
+      <div class="trust-item"><strong>Limited Edition</strong>set, while supplies last</div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">A closer look</div>
+        <h2>Every piece of the Timeless Beauty set</h2>
+        <p>The essence, the creams, and the packaging that makes this set as easy to gift as it is to keep for yourself.</p>
+      </div>
+      <div class="gallery-strip">
+        <a class="g-item tall" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+          <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/51DdnBNMv1L._SL1132_.jpg" alt="SK-II Timeless Beauty Skin Care Set full packaging">
+          <div class="g-cap">The complete Timeless Beauty set</div>
+        </a>
+        <a class="g-item" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+          <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61wsvViQl3L._SL1132_.jpg" alt="SK-II Facial Treatment Essence bottle close-up">
+          <div class="g-cap">Facial Treatment Essence, 7.7 oz</div>
+        </a>
+        <a class="g-item" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+          <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61fHT24t5FL._SL1132_.jpg" alt="SK-II Advanced Cream mini jars">
+          <div class="g-cap">Advanced Cream minis, 0.5 oz each</div>
+        </a>
+        <a class="g-item" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+          <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61mgMl3Wp9L._SL1132_.jpg" alt="SK-II Timeless Beauty set styled for gifting">
+          <div class="g-cap">Ready to gift or travel with</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <section id="article" style="padding-top:20px;">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The full picture</div>
+        <h2>What's actually inside the SK-II Timeless Beauty Skin Care Set</h2>
+        <p>Most "gift sets" are a full-size bottle padded out with sample sachets. This one is built differently — a genuinely full-size essence, paired with two creams sized to actually finish, not just sample. Here's what each piece is doing.</p>
+      </div>
+
+      <div class="feature-row">
+        <div>
+          <span class="f-tag">The heart of the set</span>
+          <h3>A full 7.7 oz bottle of the essence SK-II is built on</h3>
+          <p>The Facial Treatment Essence is the product SK-II is known for, and this set includes it at full size rather than a travel pour. It's formulated around PITERA™, a naturally fermented ingredient the brand has refined for close to ninety years, aimed at visibly softening texture and evening skin tone with regular use — the kind of step that's meant to sit right after cleansing, before anything else.</p>
+        </div>
+        <div class="f-visual">
+          <div class="frame">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61wsvViQl3L._SL1132_.jpg" alt="SK-II Facial Treatment Essence bottle">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div>
+          <span class="f-tag">Hydration &amp; firmness</span>
+          <h3>Two Advanced Cream minis, sized to actually use up</h3>
+          <p>Rounding out the set are two 0.5 oz jars of Advanced Cream, formulated to hydrate and support skin's firmness alongside the essence. At mini size, they're generous enough for a genuine multi-week trial or a full trip away from home — not just a single-use sachet you try once and forget.</p>
+        </div>
+        <div class="f-visual">
+          <div class="frame">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61fHT24t5FL._SL1132_.jpg" alt="SK-II Advanced Cream mini jars">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div>
+          <span class="f-tag">Built for gifting</span>
+          <h3>Packaging that does the wrapping for you</h3>
+          <p>Because this is a limited-edition set, the presentation is designed to be given as-is — no extra box, no last-minute wrapping paper run. It's sized well for a milestone birthday, a self-care gift, or simply treating yourself without buying three separate products at three separate price points.</p>
+        </div>
+        <div class="f-visual">
+          <div class="frame">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61mgMl3Wp9L._SL1132_.jpg" alt="SK-II Timeless Beauty Skin Care Set styled for gifting">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div>
+          <span class="f-tag">Who it's for</span>
+          <h3>A low-commitment way into the PITERA™ ritual</h3>
+          <p>If you've been curious about SK-II but weren't ready to buy the essence at full price sight unseen, this set is the practical entry point — full-size essence, real trial-length creams, one checkout. It also travels well: everything fits easily into a carry-on, so the routine doesn't have to pause for a trip.</p>
+        </div>
+        <div class="f-visual">
+          <div class="frame">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/51DdnBNMv1L._SL1132_.jpg" alt="SK-II Timeless Beauty Skin Care Set complete kit">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STAT BAND -->
+  <div class="stat-band">
+    <div class="wrap stat-grid">
+      <div class="stat">
+        <div class="num">7.7 oz</div>
+        <div class="lbl">full-size Facial Treatment Essence</div>
+      </div>
+      <div class="stat">
+        <div class="num">2 × 0.5 oz</div>
+        <div class="lbl">Advanced Cream minis included</div>
+      </div>
+      <div class="stat">
+        <div class="num">~90 yrs</div>
+        <div class="lbl">of PITERA™ formulation history</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head center">
+        <div class="eyebrow">Common questions</div>
+        <h2>Before you decide</h2>
+      </div>
+      <div class="faq" id="faqList">
+
+        <div class="faq-item open">
+          <div class="faq-q"><span>What's actually included in the Timeless Beauty Set?</span><span class="plus"></span></div>
+          <div class="faq-a"><p>A full-size 7.7 oz Facial Treatment Essence plus two 0.5 oz Advanced Cream minis — all in one limited-edition set.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q"><span>What is PITERA™, exactly?</span><span class="plus"></span></div>
+          <div class="faq-a"><p>PITERA™ is SK-II's signature naturally fermented ingredient, the base of the Facial Treatment Essence and the thread that runs through the brand's skincare line.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q"><span>Is this a good starter set if I've never tried SK-II?</span><span class="plus"></span></div>
+          <div class="faq-a"><p>It's built for exactly that — a full-size essence plus trial-length creams, so you can properly test the routine without buying every product at full price first.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q"><span>Does it travel well?</span><span class="plus"></span></div>
+          <div class="faq-a"><p>Yes — the essence bottle and both cream minis are sized to fit easily into a carry-on, making it a practical way to keep a routine going while traveling.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q"><span>Is this a good gift?</span><span class="plus"></span></div>
+          <div class="faq-a"><p>It's positioned as a gift set — full-size hero product, two supporting minis, and presentation that's ready to give without extra wrapping.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q"><span>Is the set always available at this configuration?</span><span class="plus"></span></div>
+          <div class="faq-a"><p>It's a limited edition, so contents, pricing and availability are tied to current stock — check the live Amazon listing for what's currently offered.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>See today's price on the Timeless Beauty Set</h2>
+      <p>A limited-edition set, currently available on Amazon. Availability and pricing can change without notice.</p>
+      <a class="btn-primary" href="https://amzn.to/4iOzmJn" target="_blank" rel="nofollow sponsored noopener">
+        View on Amazon →
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="disclosure">
+  <div class="wrap">
+    <div class="disclosure-box">
+      <strong>Affiliate Disclosure:</strong> TrendingGadgets is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases at no additional cost to you. Product images, specifications and pricing shown here belong to their respective owner (SK-II and Amazon) and are provided for informational purposes; prices and availability are accurate as of the date of publishing and are subject to change. This is not medical or dermatological advice — patch test new skincare and consult a dermatologist for concerns specific to your skin.
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 TrendingGadgets. Independent product coverage.</span>
+      <span>Not affiliated with or endorsed by SK-II or P&amp;G.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // subtle 3D tilt on hero product following the pointer
+  (function(){
+    var card = document.getElementById('tiltCard');
+    var stage = card.closest('.stage');
+    if (!card || !stage || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    stage.addEventListener('mousemove', function(e){
+      var r = stage.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = 'rotateX(' + (6 - y * 12) + 'deg) rotateY(' + (-12 + x * 20) + 'deg)';
+    });
+    stage.addEventListener('mouseleave', function(){
+      card.style.transform = 'rotateX(6deg) rotateY(-12deg)';
+    });
+  })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = q.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
