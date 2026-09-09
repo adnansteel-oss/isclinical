@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tata Harper Rejuvenating Serum — The Complete Guide | Clinical Guide</title>
+<meta name="description" content="An honest, in-depth look at the Tata Harper Rejuvenating Serum: how its natural neuropeptides work on fine lines, wrinkles and firmness, and whether it's worth adding to your routine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#F6F1E7;
+    --ivory-deep:#EFE7D6;
+    --green:#33422C;
+    --green-deep:#232D1F;
+    --gold:#A9812E;
+    --gold-soft:#C9A85C;
+    --sand:#CBB79A;
+    --ink:#26261E;
+    --ink-soft:#5B5A4E;
+    --line:rgba(38,38,30,0.14);
+    --radius:2px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    color:var(--green-deep);
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(246,241,231,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+  .brand{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;color:var(--green-deep);text-decoration:none;}
+  .brand span{color:var(--gold);}
+  .nav-links{display:flex;gap:34px;font-size:0.92rem;color:var(--ink-soft);}
+  .nav-links a{text-decoration:none;transition:color .2s;}
+  .nav-links a:hover{color:var(--green-deep);}
+  .nav-cta{
+    background:var(--green-deep);color:var(--ivory);
+    padding:10px 22px;border-radius:var(--radius);
+    text-decoration:none;font-size:0.88rem;letter-spacing:.02em;
+    transition:background .2s;
+  }
+  .nav-cta:hover{background:var(--gold);color:var(--green-deep);}
+  @media(max-width:800px){.nav-links{display:none;}}
+
+  /* ---------- hero with 3D product stage ---------- */
+  .hero{
+    padding:76px 0 60px;
+    display:grid;
+    grid-template-columns:1.05fr 1fr;
+    gap:60px;
+    align-items:center;
+    overflow:hidden;
+  }
+  @media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:44px;gap:40px;}}
+
+  .kicker{
+    font-size:0.95rem;color:var(--gold);
+    font-family:'Fraunces',serif;font-style:italic;font-weight:500;
+    margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem,4vw,3.3rem);
+    line-height:1.08;
+    max-width:11.5ch;
+  }
+  .hero-sub{
+    margin-top:22px;font-size:1.08rem;color:var(--ink-soft);
+    max-width:46ch;
+  }
+  .hero-facts{
+    display:flex;gap:28px;margin-top:32px;flex-wrap:wrap;
+  }
+  .fact{border-left:2px solid var(--gold);padding-left:12px;}
+  .fact b{display:block;font-family:'Fraunces',serif;font-size:1.15rem;color:var(--green-deep);}
+  .fact span{font-size:0.82rem;color:var(--ink-soft);}
+  .hero-cta-row{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--green-deep);color:var(--ivory);
+    padding:16px 30px;border-radius:var(--radius);
+    text-decoration:none;font-size:0.95rem;letter-spacing:.02em;
+    transition:transform .25s ease, background .25s ease;
+    box-shadow:0 10px 24px -12px rgba(35,45,31,0.55);
+  }
+  .btn-primary:hover{background:var(--gold);color:var(--green-deep);transform:translateY(-2px);}
+  .price-note{font-size:0.82rem;color:var(--ink-soft);}
+
+  /* 3D stage */
+  .stage{
+    perspective:1400px;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;min-height:420px;
+  }
+  .stage-ring{
+    position:absolute;width:330px;height:330px;border-radius:50%;
+    border:1px dashed var(--sand);
+    animation:spin 34s linear infinite;
+  }
+  .stage-ring.r2{width:400px;height:400px;border-color:rgba(169,129,46,.35);animation-duration:48s;animation-direction:reverse;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .stage-glow{
+    position:absolute;width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle,var(--gold-soft) 0%,transparent 68%);
+    opacity:.35;filter:blur(6px);
+  }
+  .product-card{
+    position:relative;width:280px;
+    transform-style:preserve-3d;
+    transform:rotateY(-18deg) rotateX(6deg);
+    transition:transform .4s ease;
+  }
+  .stage:hover .product-card{transform:rotateY(0deg) rotateX(0deg);}
+  .product-card img{
+    border-radius:6px;
+    box-shadow:0 40px 60px -25px rgba(35,45,31,0.55), 0 4px 10px rgba(35,45,31,.2);
+  }
+  .product-card a{display:block;}
+
+  /* ---------- credibility strip ---------- */
+  .strip{
+    background:var(--green-deep);color:var(--ivory);
+    padding:16px 0;
+  }
+  .strip .wrap{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;font-size:0.85rem;letter-spacing:.02em;color:#D8D6C4;}
+
+  /* ---------- section shell ---------- */
+  section{padding:86px 0;}
+  .section-head{max-width:640px;margin:0 auto 46px;text-align:left;}
+  .section-head.center{text-align:center;margin-left:auto;margin-right:auto;}
+  .eyebrow-line{color:var(--gold);font-family:'Fraunces',serif;font-style:italic;font-size:1rem;margin-bottom:10px;}
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.15;}
+  .section-head p{margin-top:16px;color:var(--ink-soft);font-size:1.02rem;}
+
+  /* article / intro */
+  .article-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start;
+  }
+  @media(max-width:900px){.article-grid{grid-template-columns:1fr;}}
+  .article-grid p{color:var(--ink-soft);margin:0 0 18px;font-size:1.02rem;}
+  .article-grid p:first-child{
+    font-size:1.15rem;color:var(--ink);
+  }
+  .pull-figure img{border-radius:4px;}
+  .pull-figure a{position:relative;display:block;}
+  .pull-caption{margin-top:12px;font-size:0.85rem;color:var(--ink-soft);font-style:italic;}
+
+  /* how it works - offset diagonal cards */
+  .works-list{display:flex;flex-direction:column;gap:0;}
+  .work-row{
+    display:grid;grid-template-columns:120px 1fr;gap:28px;
+    padding:30px 0;border-top:1px solid var(--line);
+    align-items:start;
+  }
+  .work-row:last-child{border-bottom:1px solid var(--line);}
+  .work-tag{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--gold);padding-top:2px;}
+  .work-row h3{font-size:1.2rem;margin-bottom:8px;}
+  .work-row p{margin:0;color:var(--ink-soft);}
+
+  /* ingredient / gallery band */
+  .gallery-band{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  }
+  @media(max-width:760px){.gallery-band{grid-template-columns:repeat(2,1fr);}}
+  .gcell{
+    background:var(--ivory-deep);border:1px solid var(--line);
+    padding:16px;border-radius:4px;
+  }
+  .gcell a{display:block;overflow:hidden;border-radius:2px;}
+  .gcell img{transition:transform .5s ease;}
+  .gcell a:hover img{transform:scale(1.04);}
+  .gcell h4{font-family:'Fraunces',serif;font-weight:500;font-size:1rem;margin:14px 0 6px;color:var(--green-deep);}
+  .gcell p{margin:0;font-size:0.88rem;color:var(--ink-soft);}
+
+  /* who it's for */
+  .fit-panel{
+    background:var(--green-deep);color:var(--ivory);
+    border-radius:6px;padding:56px;
+    display:grid;grid-template-columns:1fr 1fr;gap:46px;
+  }
+  @media(max-width:800px){.fit-panel{grid-template-columns:1fr;padding:36px 26px;}}
+  .fit-panel h2{color:var(--ivory);}
+  .fit-col h3{color:var(--gold-soft);font-size:1rem;font-family:'Work Sans',sans-serif;font-weight:600;margin-bottom:14px;}
+  .fit-col ul{margin:0;padding:0;list-style:none;}
+  .fit-col li{
+    padding:10px 0;border-top:1px solid rgba(246,241,231,.15);
+    font-size:0.98rem;color:#E7E4D5;
+  }
+  .fit-col li:last-child{border-bottom:1px solid rgba(246,241,231,.15);}
+
+  /* routine steps */
+  .routine{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  @media(max-width:800px){.routine{grid-template-columns:1fr;}}
+  .routine-step{padding:28px 0 0;border-top:2px solid var(--green-deep);}
+  .routine-step .num{font-family:'Fraunces',serif;font-size:2.1rem;color:var(--sand);display:block;margin-bottom:6px;}
+  .routine-step h3{font-size:1.1rem;margin-bottom:8px;}
+  .routine-step p{margin:0;color:var(--ink-soft);font-size:0.95rem;}
+
+  /* quote */
+  .quote-block{
+    max-width:760px;margin:0 auto;text-align:center;
+  }
+  .quote-block p{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:500;
+    font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--green-deep);line-height:1.45;
+  }
+  .quote-block span{display:block;margin-top:18px;font-family:'Work Sans';font-style:normal;font-size:0.88rem;color:var(--ink-soft);}
+
+  /* faq */
+  .faq-item{border-top:1px solid var(--line);padding:26px 0;}
+  .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-item h3{font-size:1.08rem;margin-bottom:10px;color:var(--green-deep);}
+  .faq-item p{margin:0;color:var(--ink-soft);}
+
+  /* final cta */
+  .final-cta{
+    background:linear-gradient(135deg,var(--green-deep),var(--green) 70%);
+    color:var(--ivory);border-radius:6px;
+    padding:64px 48px;text-align:center;position:relative;overflow:hidden;
+  }
+  .final-cta::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 80% 20%, rgba(201,168,92,.25), transparent 55%);
+  }
+  .final-cta h2{color:var(--ivory);max-width:20ch;margin:0 auto;position:relative;}
+  .final-cta p{color:#DAD7C6;margin:16px auto 30px;max-width:48ch;position:relative;}
+  .final-cta .btn-primary{position:relative;background:var(--gold);color:var(--green-deep);}
+  .final-cta .btn-primary:hover{background:var(--ivory);}
+
+  .more-link{
+    text-align:center;margin-top:26px;font-size:0.92rem;color:var(--ink-soft);
+  }
+  .more-link a{color:var(--green-deep);text-decoration:underline;text-underline-offset:3px;}
+
+  /* footer */
+  footer{background:var(--ivory-deep);border-top:1px solid var(--line);padding:50px 0 30px;}
+  .foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+  .foot-brand{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--green-deep);max-width:340px;}
+  .foot-brand p{color:var(--ink-soft);font-size:0.88rem;margin-top:10px;}
+  .foot-links{display:flex;gap:60px;flex-wrap:wrap;}
+  .foot-links h4{font-size:0.85rem;color:var(--green-deep);margin:0 0 12px;}
+  .foot-links ul{list-style:none;padding:0;margin:0;}
+  .foot-links li{margin-bottom:9px;}
+  .foot-links a{font-size:0.88rem;color:var(--ink-soft);text-decoration:none;}
+  .foot-links a:hover{color:var(--gold);}
+  .disclosure{
+    margin-top:40px;padding-top:24px;border-top:1px solid var(--line);
+    font-size:0.78rem;color:var(--ink-soft);line-height:1.7;
+  }
+  .copyright{margin-top:18px;font-size:0.78rem;color:var(--ink-soft);}
+
+  @media (prefers-reduced-motion: reduce){
+    .stage-ring{animation:none;}
+    .product-card{transition:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Clinical<span>Guide</span></a>
+    <nav class="nav-links">
+      <a href="#article">The Guide</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#fit">Who It's For</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">Check Price</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div>
+      <div class="kicker">An honest ingredient-level review</div>
+      <h1>The Tata Harper Rejuvenating Serum, explained properly</h1>
+      <p class="hero-sub">A youth-preserving face serum built around natural neuropeptides instead of synthetic retinoids — made for fine lines, wrinkles, loss of firmness and everyday dryness, without a lab-chemical ingredient list.</p>
+
+      <div class="hero-facts">
+        <div class="fact"><b>30ml</b><span>Concentrated formula</span></div>
+        <div class="fact"><b>Citrus</b><span>Natural scent, no synthetic fragrance</span></div>
+        <div class="fact"><b>Hyaluronic Acid</b><span>Key hydrating actor</span></div>
+        <div class="fact"><b>All Skin Types</b><span>Face-targeted serum</span></div>
+      </div>
+
+      <div class="hero-cta-row">
+        <a class="btn-primary" href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+          View on Amazon
+        </a>
+        <span class="price-note">Ships from Amazon · Prime eligible</span>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-glow"></div>
+      <div class="stage-ring"></div>
+      <div class="stage-ring r2"></div>
+      <div class="product-card">
+        <a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+          <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/51VfXG0FDBL._SL1500_.jpg" alt="Tata Harper Rejuvenating Serum bottle">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="wrap">
+      <span>Natural neuropeptide formula</span>
+      <span>Hyaluronic Acid infused</span>
+      <span>Made for fine lines &amp; firmness</span>
+      <span>Citrus botanical scent</span>
+    </div>
+  </div>
+
+  <!-- ARTICLE -->
+  <section id="article">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow-line">The guide</div>
+        <h2>What actually makes this serum different</h2>
+      </div>
+
+      <div class="article-grid">
+        <div>
+          <p>Most anti-aging serums lean on one of two strategies: exfoliate the surface faster, or flood the skin with synthetic actives strong enough to force a reaction. The Tata Harper Rejuvenating Serum takes a quieter route. Instead of stripping or resurfacing, it's formulated around plant-derived neuropeptides — compounds designed to communicate with skin cells the way your own body already does, encouraging them to behave younger rather than forcing an exfoliation response.</p>
+
+          <p>That distinction matters most for the people this serum is actually built for: those noticing the early, cumulative signs of aging rather than deep, long-set wrinkles. Fine lines around the eyes and mouth, a loss of bounce when you press a finger into your cheek, patches of dryness that weren't there a few years ago — this is squarely where a neuropeptide-led formula does its best work, because it's nudging skin function rather than sanding down the surface.</p>
+
+          <p>The second pillar of the formula is hyaluronic acid, included not as a headline ingredient but as the delivery mechanism. On its own, hyaluronic acid holds water at the skin's surface. Paired with the peptide complex here, it keeps the serum sitting in the skin long enough for the active signaling ingredients to actually reach cells, rather than evaporating off within minutes — which is one of the most common reasons lightweight serums under-deliver on their claims.</p>
+
+          <p>Then there's what's missing: no synthetic fragrance, no mineral oil, no parabens. The scent comes from real citrus botanicals, which is worth flagging for anyone who's had to abandon an otherwise-good serum because of an artificial perfume note. It's a genuinely natural formula rather than one that markets itself as clean while quietly using synthetic fillers — a distinction that's easy to miss on a product page but obvious the first time you actually use it.</p>
+        </div>
+
+        <div class="pull-figure">
+          <a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/415qDtacSGL._SL1500_.jpg" alt="Tata Harper Rejuvenating Serum packaging detail">
+          </a>
+          <p class="pull-caption">30ml glass bottle with dropper applicator — designed for precise, sparing use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" style="background:var(--ivory-deep);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow-line">Mechanism</div>
+        <h2>How the formula earns its "rejuvenating" name</h2>
+        <p>Three ingredient groups, each doing a distinct job, rather than one hero ingredient carrying the whole formula.</p>
+      </div>
+
+      <div class="works-list">
+        <div class="work-row">
+          <div class="work-tag">Signal</div>
+          <div>
+            <h3>Natural neuropeptides prompt renewal from within</h3>
+            <p>Rather than physically removing dead skin cells, these plant-derived peptides interact with skin cell receptors to encourage more youthful behavior over time — the same category of ingredient used in professional-grade anti-aging treatments, sourced here from botanical rather than synthetic origins.</p>
+          </div>
+        </div>
+        <div class="work-row">
+          <div class="work-tag">Hold</div>
+          <div>
+            <h3>Hyaluronic acid locks the actives where they're needed</h3>
+            <p>Skin loses its own hyaluronic acid reserves with age, which is part of why firmness and bounce fade. Reintroducing it here does double duty: immediate plumping, and a moisture layer that keeps the peptide complex from evaporating before it can work.</p>
+          </div>
+        </div>
+        <div class="work-row">
+          <div class="work-tag">Comfort</div>
+          <div>
+            <h3>Citrus botanicals replace synthetic fragrance</h3>
+            <p>The scent isn't an afterthought sprayed in at the end — it comes from the same category of natural plant compounds as the active ingredients, which is why the formula tends to sit well even on skin that reacts to typical "spa serum" fragrance blends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow-line">A closer look</div>
+        <h2>Texture, application and everyday use</h2>
+      </div>
+
+      <div class="gallery-band">
+        <div class="gcell">
+          <a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/61ujjMV8uRL._SL1500_.jpg" alt="Tata Harper Rejuvenating Serum applied on skin">
+          </a>
+          <h4>Lightweight, fast-absorbing finish</h4>
+          <p>Sits under moisturizer and makeup without pilling or a greasy residue.</p>
+        </div>
+        <div class="gcell">
+          <a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/71Z-HNmxsQL._SL1500_.jpg" alt="Tata Harper Rejuvenating Serum ingredient detail">
+          </a>
+          <h4>Made without synthetic fillers</h4>
+          <p>Formulated with a short, natural ingredient list you can actually read.</p>
+        </div>
+        <div class="gcell">
+          <a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/616-5cXIPiL._SL1500_.jpg" alt="Tata Harper Rejuvenating Serum dropper bottle">
+          </a>
+          <h4>Dropper-controlled dosing</h4>
+          <p>A few drops go a long way — the 30ml bottle is built to last.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section id="fit">
+    <div class="wrap">
+      <div class="fit-panel">
+        <div>
+          <h2>Who this serum actually suits</h2>
+          <p style="color:#D8D6C4;margin-top:16px;">Be honest about fit before you buy — it's a targeted formula, not a do-everything serum.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;">
+          <div class="fit-col">
+            <h3>Good match if you have</h3>
+            <ul>
+              <li>Fine lines and early wrinkles</li>
+              <li>Skin that's started to feel less firm</li>
+              <li>Ongoing dryness or dullness</li>
+              <li>A preference for natural formulas</li>
+            </ul>
+          </div>
+          <div class="fit-col">
+            <h3>Consider something else if</h3>
+            <ul>
+              <li>You want a strong retinol-level resurfacing effect</li>
+              <li>You're targeting active acne or texture</li>
+              <li>You're specifically fragrance-free only</li>
+              <li>You want a budget entry-level serum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTINE -->
+  <section style="background:var(--ivory-deep);">
+    <div class="wrap">
+      <div class="section-head center">
+        <div class="eyebrow-line">In practice</div>
+        <h2>How to build it into a routine</h2>
+      </div>
+      <div class="routine">
+        <div class="routine-step">
+          <span class="num">Cleanse</span>
+          <h3>Start on clean, dry skin</h3>
+          <p>Use morning and night after cleansing, while skin is dry so the serum absorbs rather than sliding off.</p>
+        </div>
+        <div class="routine-step">
+          <span class="num">Apply</span>
+          <h3>2–3 drops, face and neck</h3>
+          <p>Warm between fingertips first, then press gently into skin rather than rubbing — this helps the peptides settle in.</p>
+        </div>
+        <div class="routine-step">
+          <span class="num">Seal</span>
+          <h3>Follow with moisturizer and SPF</h3>
+          <p>Lock the serum in with a moisturizer, and always finish the morning routine with sunscreen — no anti-aging serum works against unprotected UV exposure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / GALLERY 2 -->
+  <section>
+    <div class="wrap">
+      <div class="quote-block">
+        <p>"The difference isn't dramatic overnight — it's that skin starts to look like it's simply having a good week, consistently, rather than reaching for one."</p>
+        <span>— on what a neuropeptide-led routine actually feels like</span>
+      </div>
+
+      <div style="max-width:420px;margin:50px auto 0;">
+        <a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">
+          <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T3/images/I/71JJWcpUBiL._SL1500_.jpg" alt="Tata Harper Rejuvenating Serum full product view" style="border-radius:6px;box-shadow:0 30px 50px -20px rgba(35,45,31,.4);">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--ivory-deep);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow-line">Before you buy</div>
+        <h2>Questions worth answering upfront</h2>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is the Tata Harper Rejuvenating Serum suitable for all skin types?</h3>
+        <p>Yes — the formula is built around botanical, non-irritating ingredients, which is why it's positioned for all skin types, including skin that's typically reactive to stronger actives.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it replace retinol or vitamin C in a routine?</h3>
+        <p>Not directly. It works on a different mechanism — cell signaling rather than exfoliation or antioxidant defense — so many people layer it alongside those actives rather than instead of them.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How noticeable is the citrus scent?</h3>
+        <p>It's present but light, and comes from natural botanical sources rather than added synthetic fragrance, so it tends to fade quickly after application.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How long does one 30ml bottle typically last?</h3>
+        <p>Because it's used a few drops at a time, most people get several months of twice-daily use from a single bottle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="wrap">
+      <div class="final-cta">
+        <h2>Ready to see it on your own skin?</h2>
+        <p>Check current pricing and availability for the Tata Harper Rejuvenating Serum on Amazon.</p>
+        <a class="btn-primary" href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">Check Price on Amazon</a>
+      </div>
+      <p class="more-link">Looking for more clinical-grade beauty picks? Explore our full curation at <a href="https://www.clinicalguidehub.online/" target="_blank" rel="noopener">clinicalguidehub.online</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        Clinical<span style="color:var(--gold);">Guide</span>
+        <p>Independent, ingredient-first reviews of clinical-grade skincare — so you know what you're actually applying.</p>
+      </div>
+      <div class="foot-links">
+        <div>
+          <h4>This Guide</h4>
+          <ul>
+            <li><a href="#article">The Article</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#fit">Who It's For</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More From Us</h4>
+          <ul>
+            <li><a href="https://www.clinicalguidehub.online/" target="_blank" rel="noopener">Clinical Guide Home</a></li>
+            <li><a href="https://amzn.to/4r5ZQsf" target="_blank" rel="noopener sponsored">Shop This Serum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="disclosure">
+      <strong>Affiliate Disclosure:</strong> This page is an independent, affiliate-supported guide. As an Amazon Associate, we earn from qualifying purchases made through links on this page, at no additional cost to you. Product imagery and trademarks remain the property of their respective owners. This content reflects our own research and is not a substitute for professional dermatological advice.
+    </div>
+    <div class="copyright">© 2026 Clinical Guide. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
